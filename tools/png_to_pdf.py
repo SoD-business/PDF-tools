@@ -38,7 +38,7 @@ class PngToPdfConverterTool(ttk.Frame):
             tool_name_frame,
             text="PNG to PDF Converter",
             font=settings["text_h1"],
-            wraplength=190,
+            wraplength=settings["text_h1_wrap"],
         )
         tool_name_label.pack(anchor="nw")
 
@@ -49,7 +49,7 @@ class PngToPdfConverterTool(ttk.Frame):
             instructions_frame,
             text="Instructions",
             font=settings["text_h2"],
-            wraplength=190,
+            wraplength=settings["text_h1_wrap"],
         )
         self.instructions_label_title.pack(anchor="nw")
 
@@ -66,7 +66,7 @@ class PngToPdfConverterTool(ttk.Frame):
             step1_frame,
             text="Click the 'Select PNG' button on the right, and choose the .png image you want to convert.",
             font=settings["text_base"],
-            wraplength=190,
+            wraplength=settings["text_h1_wrap"],
         )
         self.instructions_label1.pack(side="left", padx=5)
 
@@ -83,7 +83,7 @@ class PngToPdfConverterTool(ttk.Frame):
             step2_frame,
             text="Click the 'Convert to PDF' button under the thumbnail image to convert the selected image to PDF.",
             font=settings["text_base"],
-            wraplength=190,
+            wraplength=settings["text_h1_wrap"],
         )
         self.instructions_label2.pack(side="left", padx=5)
 
@@ -100,7 +100,7 @@ class PngToPdfConverterTool(ttk.Frame):
             step3_frame,
             text=self.choose_save_location,
             font=settings["text_base"],
-            wraplength=190,
+            wraplength=settings["text_h1_wrap"],
         )
         self.instructions_label3.pack(side="left", padx=5)
 

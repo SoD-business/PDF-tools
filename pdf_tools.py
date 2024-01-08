@@ -19,6 +19,7 @@ class PdfToolsApp:
             "right_frame_pady": 50,
             "text_base": ("Arial", 10),
             "text_h1": ("Arial Black", 16),
+            "text_h1_wrap": 180,
             "text_h2": ("Arial", 14),
             "text_h3": ("Arial", 12),
             "text_base_bold": ("Arial", 10, "bold"),
@@ -57,7 +58,7 @@ class PdfToolsApp:
         # Home tab content
         self.home_label = ttk.Label(
             self.home_tab,
-            text="Welcome to PDF Tools!\n\nPlease use the tabs above to access different PDF utilities.",
+            text="Welcome to PDF Tools!\n\nPlease use the tabs above to access the different PDF utilities currently available.\n\nMore tools will be added in the future.\n\nThank you for using PDF Tools!",
             font=("Arial", 14),
         )
         self.home_label.pack(pady=30, padx=30, anchor="nw", fill="x")

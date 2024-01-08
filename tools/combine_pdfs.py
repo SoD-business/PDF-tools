@@ -39,7 +39,7 @@ class CombinePdfsTool(ttk.Frame):
             tool_name_frame,
             text="Merge PDFs",
             font=settings["text_h1"],
-            wraplength=190,
+            wraplength=settings["text_h1_wrap"],
         )
         tool_name_label.pack(anchor="nw")
 
@@ -50,7 +50,7 @@ class CombinePdfsTool(ttk.Frame):
             instructions_frame,
             text="Instructions",
             font=settings["text_h2"],
-            wraplength=190,
+            wraplength=settings["text_h1_wrap"],
         )
         self.instructions_label_title.pack(anchor="nw")
 
@@ -67,7 +67,7 @@ class CombinePdfsTool(ttk.Frame):
             step1_frame,
             text="Click 'Select PDFs' and choose the PDF files you want to merge.",
             font=("Arial", 10),
-            wraplength=190,
+            wraplength=settings["text_h1_wrap"],
         )
         self.instructions_label1.pack(side="left", padx=5)
 
@@ -82,9 +82,9 @@ class CombinePdfsTool(ttk.Frame):
         self.instructions_label2_number.pack(side="left", anchor="nw")
         self.instructions_label2 = Label(
             step2_frame,
-            text="Re-order the files by clicking and dragging them up and down.",
+            text="Re-order the files by clicking the buttons to the left of each file name.",
             font=("Arial", 10),
-            wraplength=190,
+            wraplength=settings["text_h1_wrap"],
         )
         self.instructions_label2.pack(side="left", padx=5)
 
@@ -101,7 +101,7 @@ class CombinePdfsTool(ttk.Frame):
             step3_frame,
             text="Click 'Merge PDFs' to combine the files and save the merged document.",
             font=("Arial", 10),
-            wraplength=190,
+            wraplength=settings["text_h1_wrap"],
         )
         self.instructions_label3.pack(side="left", padx=5)
 
