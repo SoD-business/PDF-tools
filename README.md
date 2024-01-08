@@ -38,4 +38,4 @@ Instructions for how to use each tool are provided.
 
 ## License
 
-PDF Tools is distributed under the MIT License. For more details, see the LICENSE file.
+PDF Tools is distributed under the GNU GPLv3. For more details, see the LICENSE file.

@@ -58,7 +58,7 @@ class PdfToolsApp:
         # Home tab content
         self.home_label = ttk.Label(
             self.home_tab,
-            text="Welcome to PDF Tools!\n\nPlease use the tabs above to access the different PDF utilities currently available.\n\nMore tools will be added in the future.\n\nThank you for using PDF Tools!",
+            text="Welcome to PDF Tools\n\nPlease use the tabs above to access the different PDF utilities currently available.\n\nMore tools will be added in the future.\n\nThank you for using PDF Tools!",
             font=("Arial", 14),
         )
         self.home_label.pack(pady=30, padx=30, anchor="nw", fill="x")
@@ -66,7 +66,7 @@ class PdfToolsApp:
         # Home tab copyright
         self.copyright_label = ttk.Label(
             self.home_tab,
-            text="Copyright © 2024. Sound of Dialup.",
+            text="© Copyright 2024 Sound of Dialup.",
             font=("Arial", 9),
         )
         self.copyright_label.pack(pady=30, padx=30, anchor="se", side="bottom")
