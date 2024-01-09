@@ -1,6 +1,6 @@
 from tkinter import ttk
 import ttkbootstrap as ttkb
-from tools import PngToPdfConverterTool, CombinePdfsTool
+from tools import PngToPdfConverterTool, CombinePdfsTool, SplitPdfTool
 
 
 class PdfToolsApp:
@@ -41,6 +41,18 @@ class PdfToolsApp:
         self.home_tab = ttk.Frame(self.tabControl)
         self.tabControl.add(self.home_tab, text="Home")
 
+        # Split PDFs tab
+        self.split_pdf_tab = ttk.Frame(self.tabControl)
+        self.tabControl.add(self.split_pdf_tab, text="Split PDF")
+        self.split_pdfs_tool = SplitPdfTool(self.split_pdf_tab, self.settings)
+        self.split_pdfs_tool.pack(expand=True, fill="both")
+
+        # Combine PDFs tab
+        self.combine_pdf_tab = ttk.Frame(self.tabControl)
+        self.tabControl.add(self.combine_pdf_tab, text="Combine PDFs")
+        self.combine_pdfs_tool = CombinePdfsTool(self.combine_pdf_tab, self.settings)
+        self.combine_pdfs_tool.pack(expand=True, fill="both")
+
         # PNG to PDF tab
         self.convert_png_pdf_tab = ttk.Frame(self.tabControl)
         self.tabControl.add(self.convert_png_pdf_tab, text="PNG to PDF")
@@ -48,12 +60,6 @@ class PdfToolsApp:
             self.convert_png_pdf_tab, self.settings
         )
         self.png_to_pdf_tool.pack(expand=True, fill="both")
-
-        # Combine PDFs tab
-        self.combine_pdf_tab = ttk.Frame(self.tabControl)
-        self.tabControl.add(self.combine_pdf_tab, text="Combine PDFs")
-        self.combine_pdfs_tool = CombinePdfsTool(self.combine_pdf_tab, self.settings)
-        self.combine_pdfs_tool.pack(expand=True, fill="both")
 
         # Home tab content
         self.home_label = ttk.Label(
