@@ -37,7 +37,7 @@ class CombinePdfsTool(ttk.Frame):
         tool_name_frame.pack_propagate(False)
         tool_name_label = Label(
             tool_name_frame,
-            text="Merge PDFs",
+            text="Combine PDFs",
             font=settings["text_h1"],
             wraplength=settings["text_h1_wrap"],
         )
